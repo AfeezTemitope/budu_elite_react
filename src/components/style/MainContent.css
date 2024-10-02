@@ -1,0 +1,27 @@
+.main-content {
+    width: 85%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.image-slider,
+.background-image-text {
+    flex: 1;
+    min-width: 0;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .image-slider,
+    .background-image-text {
+        flex: none;
+        width: 100%;
+    }
+}

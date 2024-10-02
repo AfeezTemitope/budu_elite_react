@@ -1,0 +1,43 @@
+.slider {
+    position: relative;
+    max-width: 600px;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .slider {
+        max-width: 100%;
+    }
+
+    .arrow {
+        padding: 8px;
+    }
+}
